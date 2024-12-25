@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 50px;
+    margin: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 1px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.cell.start {
+    background-color: green;
+}
+
+.cell.end {
+    background-color: blue;
+}
+
+.cell.visited {
+    background-color: yellow;
+}
+
+.cell.obstacle {
+    background-color: red;
+}
+
+.cell.path {
+    background-color: magenta;
+}

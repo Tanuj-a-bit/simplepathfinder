@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Pathfinding Visualizer</h1>
+
+<div class="controls">
+    <label for="startX">Start X:</label>
+    <input type="number" id="startX" value="0" min="0" max="9">
+    <label for="startY">Start Y:</label>
+    <input type="number" id="startY" value="0" min="0" max="9">
+    <label for="endX">End X:</label>
+    <input type="number" id="endX" value="9" min="0" max="9">
+    <label for="endY">End Y:</label>
+    <input type="number" id="endY" value="9" min="0" max="9">
+    <label for="numObstacles">Number of Obstacles:</label>
+    <input type="number" id="numObstacles" value="0" min="0" max="98">
+    <button onclick="startVisualizing()">Start Visualization</button>
+</div>
+
+<div id="obstacleInputContainer" style="display: none;">
+    <h3>Enter Obstacle Coordinates</h3>
+    <div id="obstacleInputs"></div>
+    <button id="startBFSButton" style="display: none;" onclick="startBFS()">Start Visualization</button>
+</div>
+
+<div id="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
